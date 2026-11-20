@@ -22,9 +22,9 @@ Open the notebook in Google Colab, choose Runtime > Change runtime type > T4 GPU
 An RBI Monetary Policy document from October 2026 (PDF).
 
 ## Key findings
-- The LLM introduced no numbers that were missing from the source (0 unsupported numbers in the brief and in both prompt answers).
-- The check cannot catch a real number used in the wrong place, so the brief still needs to be read against the source.
-
+- The LLM introduced no numbers missing from the source (0 unsupported numbers across the brief and both prompt answers).
+- The structured prompt (role, rules, output format) gave a shorter, more focused answer than the basic prompt.
+- The number check cannot verify claims without numbers, such as the stated risks, so those must be checked against the source by hand.
 ## Limitations
 - A small open model is weaker than the largest LLMs and can still make mistakes
 - The number check only catches numbers that are missing from the source
